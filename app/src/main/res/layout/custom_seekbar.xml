@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="40dp">
+
+    <SeekBar
+        android:id="@+id/seekBar_number_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="9"
+        android:background="@drawable/bg_slider"
+        android:max="10"
+        android:maxHeight="20px"
+        android:minHeight="20px"
+        android:padding="0px"
+        android:progress="6"
+        android:progressDrawable="@drawable/progress"
+        android:splitTrack="false"
+        android:thumb="@drawable/slider_round" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginLeft="4pt"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:gravity="right"
+        android:singleLine="true"
+        android:textAlignment="gravity"
+        android:textColor="@color/field"
+        android:textSize="16sp" />
+</LinearLayout>
